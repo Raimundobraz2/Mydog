@@ -1,0 +1,176 @@
+html,
+body {
+    height: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Bahnschrift', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root{
+--color-icon:#FF725E;
+--color-menu:#263238;
+--color-hover:#ff725e;
+--color-icon-social:#AE7461;
+--color-button:#AE7461;
+---color-texto:#707070;
+--color-border:#707070;
+--color-texto-button:#ffff;
+font-size: 62.5%;
+}
+
+body{
+max-width: 100vh;
+font-size: 1.6rem;
+overflow: hidden;
+}
+
+/* Menu */
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    justify-content: space-around;
+    position: relative;
+    left: 30rem;
+    top: 2rem;
+}
+
+.logotipo{
+    position: relative;
+    right: 20rem;
+}
+
+a{
+    color: var(--color-menu);
+    font-weight: bold;
+    font-size: 1.5rem;   
+}
+
+a:hover{
+    color: var(--color-hover);
+    transition: all 0.5s ease-in-out;
+}
+
+/* Menu-icon */
+
+.icone-nav{
+    display: flex;
+    gap: 2rem;
+    position: relative;
+    left: 20rem;
+}
+
+.icone-nav i:hover{
+    color: var(--color-icon);
+    transition: all .55s ease-in-out;
+}
+
+.conteudo{
+    position: absolute;
+    top: 21rem;
+    left: 20rem;
+}
+
+.conteudo h1{
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+p{
+   position: relative;
+   top: 1rem;
+   color: var(---color-texto);
+   font-weight: 200;
+   font-size: 16px;
+}
+
+.conteudo .icone-social{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+    top: -12rem;
+    right: 9rem;
+    font-size: 1.9rem;
+}
+
+.icone-social i:hover{
+    color: var(--color-icon-social);
+    transition: all .55s ease-in-out;
+}
+
+.conteudo-button{
+    display: flex;
+    gap: 3rem;
+    position: relative;
+    top: -5rem;
+}
+
+.conteudo-button{
+ position: relative;
+ top: -5rem;
+}
+
+button{
+    background: var(--color-button);
+    width:15rem;
+    padding: 11px 26px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 400;
+    color: var(--color-texto-button);
+    cursor: pointer;
+}
+
+button:hover{
+border: solid 1px var(--color-icon-social);
+background: var(--color-texto-button);
+color: var(--color-button);
+transition: all .55s ease-in-out;
+}
+
+#button-1{
+    background:transparent;
+    width:15rem;
+    padding: 11px 26px;
+    border: solid 1px var(--color-border);
+    border-radius: 4px;
+    font-weight: 400;
+    color: var(--color-menu);
+    cursor: pointer;
+}
+
+#button-1:hover{
+    background: var(--color-button);
+    color: var(--color-texto-button);
+    transition: all .55s ease-in-out;
+}
+
+.img-mydog{
+ position: absolute;
+ left: 80rem;
+ top: 14rem;
+}
+
+.img-mydog  img{
+    width: 70%;  
+}
+
+.conteudo-img{
+    position: relative;
+    top:29rem;
+    left: 48rem;
+    z-index: -2222;
+}
+
+.conteudo-img img{
+    width: 17%;
+}
